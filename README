@@ -1,7 +1,4 @@
-Elaborate curl wrappers for Instructure product APIs.
+Formula to install[inst-api](https://github.com/thedannywahl/inst-api)
 
-## Installation
-Once homebrew is installed, run the following:
-
-      brew tap thedannywahl/inst-api
-      brew install inst-api
+```brew tap thedannywahl/inst-api
+brew install inst-api```
