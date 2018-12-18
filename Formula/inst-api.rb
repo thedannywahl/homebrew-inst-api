@@ -8,11 +8,10 @@ class InstApi < Formula
     bin.install Dir["arc/arc"], Dir["bridge/bridge"], Dir["canvas/canvas"], Dir["catalog/catalog"], Dir["commons/commons"]
   end
 
-  def caveats
-    <<-EOS.undent
+  def caveats; <<~EOS
       Installed binaries are: arc, bridge, canvas, catalog, commons
       User pref file is stored in ~/.inst
-    EOS
+  EOS
   end
 
   test do
