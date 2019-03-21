@@ -1,8 +1,8 @@
 class InstApi < Formula
   desc "A collection of wrappers for Instructure APIs"
   homepage "https://github.com/thedannywahl/inst-api"
-  url "https://github.com/thedannywahl/inst-api/archive/v0.3.1.zip"
-  sha256 "9b8135aa0871df7d5fba0d28a5a1fcc1187632c02c765d6f41ba33ed5e1ec3fc"
+  url "https://github.com/thedannywahl/inst-api/archive/v0.3.2.zip"
+  sha256 "68890414b17b5bdacd77f589ee2443260e81836c92ae98b2726f31a490a4760b"
 
   def install
     bin.install Dir["arc/arc"], Dir["bridge/bridge"], Dir["canvas/canvas"], Dir["catalog/catalog"], Dir["commons/commons"]
