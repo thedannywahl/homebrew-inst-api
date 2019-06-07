@@ -5,7 +5,7 @@ class InstApi < Formula
   sha256 "f5ebad6287071a0f99a691b452b2874602abda2d9c9da5798fa5ee115eca2358"
 
   def install
-    bin.install Dir["studio/studio"], Dir["bridge/bridge"], Dir["canvas/canvas"], Dir["catalog/catalog"], Dir["data/cdata"], Dir["commons/commons"]
+    bin.install Dir["studio/studio"], Dir["bridge/bridge"], Dir["canvas/canvas"], Dir["catalog/catalog"], Dir["cdata/cdata"], Dir["commons/commons"]
   end
 
   def caveats; <<~EOS
