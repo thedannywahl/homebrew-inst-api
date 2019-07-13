@@ -1,15 +1,15 @@
 class InstApi < Formula
   desc "A collection of wrappers for Instructure APIs"
   homepage "https://github.com/thedannywahl/inst-api"
-  url "https://github.com/thedannywahl/inst-api/archive/v0.4.1.zip"
-  sha256 "49bbacb17404edbe7a8cae641d72aaba82b2db8424109f39f27b7b57fd747b61"
+  url "https://github.com/thedannywahl/inst-api/archive/v1.0.0.zip"
+  sha256 "da14e7c128c1f6a2f7088c00ef86ac8d910fbb31fc14cc602bbf193715aa93b9"
 
   def install
-    bin.install Dir["studio/studio"], Dir["bridge/bridge"], Dir["canvas/canvas"], Dir["catalog/catalog"], Dir["cdata/cdata"], Dir["commons/commons"]
+    bin.install Dir["studio/studio"], Dir["bridge/bridge"], Dir["canvas/canvas"], Dir["catalog/catalog"], Dir["cdata/cdata"], Dir["commons/commons"], Dir["insthelp/insthelp"]
   end
 
   def caveats; <<~EOS
-      Installed binaries are: studio, bridge, canvas, catalog, cdata, commons
+      Installed binaries are: studio, bridge, canvas, catalog, cdata, commons, and insthelp
       User pref file is stored in ~/.inst
   EOS
   end
@@ -21,6 +21,7 @@ class InstApi < Formula
     system "#{bin}/catalog -v"
     system "#{bin}/commons -v"
     system "#{bin}/cdata -v"
+    system "#{bin}/insthelp version insthelp"
   end
 
 end
