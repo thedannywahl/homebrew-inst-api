@@ -1,8 +1,8 @@
 class InstApi < Formula
   desc "A collection of wrappers for Instructure APIs"
   homepage "https://github.com/thedannywahl/inst-api"
-  url "https://github.com/thedannywahl/inst-api/archive/v1.1.2.zip"
-  sha256 "060dc160e897831b04c259940b36d985402b208cd653cc0d6ed4e08f03be88e0"
+  url "https://github.com/thedannywahl/inst-api/archive/v1.1.3.zip"
+  sha256 "2d5e1839dae52f5a68a44bc25fb264b98355a5e573886fd14f5c4b3e13c77f3d"
 
   depends_on "jq"
 
